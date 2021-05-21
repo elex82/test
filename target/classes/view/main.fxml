@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sabteh.controller.ControllerMane">
    <children>
-      <TableView fx:id="TableView" layoutX="100.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="TableView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="0.0">
         <columns>
-          <TableColumn fx:id="name" prefWidth="75.0" text="name" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
         </columns>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
       </TableView>
+      <Button fx:id="create" layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onAction="#create" text="create" />
+      <Button layoutX="100.0" layoutY="300.0" mnemonicParsing="false" onAction="#update" text="update" />
+      <Button layoutY="300.0" mnemonicParsing="false" onAction="#delet" text="delet" />
    </children>
 </AnchorPane>
